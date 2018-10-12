@@ -1,6 +1,30 @@
 <?php 
+/*
+|--------------------------------------------------------------------------
+| Database Connection  
+|--------------------------------------------------------------------------
+|
+| 
+| This is where you put you database Connection password and database name
+| 
+|
+|
+*/
   class Database {
     // DB Params
+   
+/*
+|--------------------------------------------------------------------------
+| // DB Params
+|--------------------------------------------------------------------------
+|
+| 
+| 
+| All Database need to connect
+|
+|
+*/
+
     private $host = 'localhost';
     private $db_name = 'myblog';
     private $username = 'root';
@@ -8,6 +32,19 @@
     private $conn;
 
     // DB Connect
+    
+/*
+|--------------------------------------------------------------------------
+| DB Connect
+|--------------------------------------------------------------------------
+|
+| 
+| Connect to the Database using PDO
+| 
+| 
+|
+*/
+
     public function connect() {
       $this->conn = null;
 
